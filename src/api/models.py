@@ -2,18 +2,21 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
-class User(db.Model):
+class Song(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-    password = db.Column(db.String(80), unique=False, nullable=False)
-    is_active = db.Column(db.Boolean(), unique=False, nullable=False)
+    title = db.Column(db.String(120), nullable=False)
+    artist = db.Column(db.String(120), nullable=False)
+    genre = db.Column(db.String(80))
+    bpm = db.Column(db.Integer)
 
     def __repr__(self):
-        return f'<User {self.email}>'
+        return f'<Song {self.title} by {self.artist}>'
 
     def serialize(self):
         return {
             "id": self.id,
-            "email": self.email,
-            # do not serialize the password, its a security breach
+            "title": self.title,
+            "artist": self.artist,
+            "genre": self.genre,
+            "bpm": self.bpm
         }
