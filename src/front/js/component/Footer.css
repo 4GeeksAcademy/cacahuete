@@ -1,0 +1,56 @@
+.footer {
+    background-color: #160830; /* Morado */
+    color: #ffffff; /* Blanco */
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+.footer-title {
+    color: #33fbe1; /* Verde */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #33fbe1; /* Verde */
+}
+
+.footer-social-link {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+    color: #33fbe1; /* Verde */
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffffff;
+}
+
+@media (max-width: 768px) {
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-social-link {
+        margin-right: 10px;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
