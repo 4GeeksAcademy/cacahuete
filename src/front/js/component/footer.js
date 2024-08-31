@@ -24,7 +24,7 @@ export const Footer = () => (
 						<li><a href="#support" className="footer-link">Soporte</a></li>
 						<li><a href="#contact" className="footer-link">Contacto</a></li>
 					</ul>
-				</div>
+				</div
 				<div className="col-md-3 mb-3">
 					<h4 className="footer-title">Síguenos</h4>
 					<div className="d-flex justify-content-center">
